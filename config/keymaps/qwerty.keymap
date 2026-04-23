@@ -2,7 +2,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys_de_swiss.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors/mouse_keys.dtsi>
@@ -12,6 +11,7 @@
 #include "keymap_features/macros.dtsi"
 #include "keymap_features/behaviors.dtsi"
 #include "keymap_features/combos.dtsi"
+#include "keys_de_swiss.h"
 
 / {
 /* --- KEYMAP CONFIG --- */
@@ -110,8 +110,8 @@
 // ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
 // ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
-                                  &trans   &trans   &trans      &trans   &trans
-                             // ╰────────┴────────┴────────╯  ╰────────┴────────╯
+                                &trans   &trans   &trans      &trans   &trans   &trans
+                           // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
         };
 
@@ -125,8 +125,8 @@
 // ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
 // ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
-                                  &trans   &trans   &trans      &trans   &trans
-                             // ╰────────┴────────┴────────╯  ╰────────┴────────╯
+                                &trans   &trans   &trans      &trans   &trans   &trans
+                           // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
         };
     };
