@@ -11,7 +11,7 @@
 #include "keymap_features/macros.dtsi"
 #include "keymap_features/behaviors.dtsi"
 #include "keymap_features/combos.dtsi"
-#include "keys_de_swiss.h"
+#include "keymap_features/keys_de_swiss.h"
 
 / {
 /* --- KEYMAP CONFIG --- */
