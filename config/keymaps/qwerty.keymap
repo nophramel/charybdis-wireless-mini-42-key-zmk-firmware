@@ -24,19 +24,20 @@
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
 //                         36     37     38        39     40     41
 //                      ╰──────┴──────┴──────╯  ╰──────┴──────┴──────╯
-// #define BASE    0
-// #define NUM     1
-// #define NAV     2
-// #define SYM     3
-// #define GAME    4
-// #define EXTRAS  5
-// #define SLOW    6
-// #define SCROLL  7
+// #define MAC       0
+// #define MACNUM    1
+// #define MACNAV    2
+// #define WIN       3
+// #define WNUM      4
+// #define WNAV      5
+// #define SCROLL    6
+// #define SNIPER    7
+// #define BT-RGB    8
 
     keymap {
         compatible = "zmk,keymap";
-        BASE {
-            display-name = "Base";
+        MAC {
+            display-name = "MAC";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -50,8 +51,8 @@
             >;
         };
 
-        NUM {
-            display-name = "Num";
+        MACNUM {
+            display-name = "MACNUM";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -65,8 +66,8 @@
             >;
         };
 
-        NAV {
-            display-name = "Nav";
+        MACNAV {
+            display-name = "MACNAV";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -80,8 +81,8 @@
             >;
         };
 
-        SYM {
-            display-name = "Sym";
+        WIN {
+            display-name = "WIN";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -95,8 +96,8 @@
             >;
         };
 
-        GAME {
-            display-name = "Game";
+        WNUM {
+            display-name = "WNUM";
             bindings = <
 &kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &none  &none  &none  &none  &none  &trans
 &kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &none  &none  &none  &none  &none  &none
@@ -105,8 +106,8 @@
             >;
         };
 
-        EXTRAS {
-            display-name = "Xtra";
+        WNAV {
+            display-name = "WNAV";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -121,7 +122,7 @@
         };
 
         SLOW {
-            display-name = "Slow";
+            display-name = "SLOW";
             bindings = <
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
@@ -149,5 +150,21 @@
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
         };
+
+        BT-RGB {
+            display-name = "BT-RGB";
+            bindings = <
+// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
+    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
+// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
+    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
+// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
+    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
+// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+                                &trans   &trans   &trans      &trans   &trans   &trans
+                           // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
+            >;
+        };
+
     };
 };
