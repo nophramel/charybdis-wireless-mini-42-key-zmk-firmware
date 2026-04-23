@@ -39,13 +39,9 @@
         MAC {
             display-name = "MAC";
             bindings = <
-// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+    &kp ESC         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp DE_Z     &kp U                             &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
+    &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F        &kp G             &kp H        &hmr RIGHT_SHIFT J                &hml RIGHT_GUI K  &hml RIGHT_ALT L  &hml RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
+    &kp LEFT_SHIFT  &lt 6 DE_Y           &kp X            &kp C            &kp V                    &kp B             &kp N        &kp M                             &kp DE_COMMA      &kp DE_DOT        &lt 6 DE_MINUS                  &kp RIGHT_SHIFT
                                 &trans   &trans   &trans      &trans   &trans   &trans
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
@@ -54,13 +50,9 @@
         MACNUM {
             display-name = "MACNUM";
             bindings = <
-// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+    &kp DE_LESS_THAN              &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES      &hml DE_HASH DE_ASTERISK  &hml DE_CENT DE_C_CEDILLA       &kp DE_PERCENT     &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
+    &hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_SECTION  &hml LEFT_GUI DE_EQUAL    &hml LEFT_SHIFT LS(DE_SECTION)  &hml LEFT_ALT N    &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL LA(RETURN)  &hmr DE_BROKEN_BAR DE_PIPE
+    &kp DE_CARET                  &trans                &kp DE_AT                 &hml LA(DE_N8) LA(DE_N5)  &hml LA(DE_N9) LA(DE_N6)        &kp DE_UMLAUT      &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_DOT                     &kp LA(LS(DE_N7))
                                 &trans   &trans   &trans      &trans   &trans   &trans
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
@@ -69,13 +61,9 @@
         MACNAV {
             display-name = "MACNAV";
             bindings = <
-// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+    &kp F1  &kp F2    &kp F3         &kp F4      &kp F5            &kp F6        &kp F7                &kp F8                &kp F9          &kp F10       &kp F11          &kp F12
+    &trans  &kp HOME  &kp PAGE_UP    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans                &kp LEFT_ARROW        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+    &trans  &kp END   &kp PAGE_DOWN  &trans      &trans            &trans        &trans                &trans                &trans          &trans        &trans           &trans
                                 &trans   &trans   &trans      &trans   &trans   &trans
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
@@ -84,13 +72,9 @@
         WIN {
             display-name = "WIN";
             bindings = <
-// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+    &kp ESC         &kp Q                &kp W            &kp E            &kp R              &kp T             &kp DE_Z     &kp U               &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
+    &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &hml LEFT_SHIFT F  &kp G             &kp H        &hmr RIGHT_SHIFT J  &hml RIGHT_GUI K  &hml RIGHT_ALT L  &hml RIGHT_CONTROL DE_O_UMLAUT  &kp DE_A_UMLAUT
+    &kp LEFT_SHIFT  &lt 6 DE_Y           &kp X            &kp C            &kp V              &kp B             &kp N        &kp M               &kp DE_COMMA      &kp DE_DOT        &lt 6 DE_MINUS                  &kp RIGHT_SHIFT
                                 &trans   &trans   &trans      &trans   &trans   &trans
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
@@ -99,9 +83,9 @@
         WNUM {
             display-name = "WNUM";
             bindings = <
-&kp N1  &kp TAB    &kp Q  &kp W   &kp E      &kp R           &none  &none  &none  &none  &none  &trans
-&kp N2  &kp LCTRL  &kp A  &kp S   &kp D      &kp F           &none  &none  &none  &none  &none  &none
-&kp N3  &kp LSHFT  &kp Y  &kp X   &kp C      &kp V           &none  &none  &none  &none  &none  &none
+    &kp DE_SECTION                &kp DE_EXCLAMATION    &kp DE_DOUBLE_QUOTES        &hml DE_HASH DE_ASTERISK            &hml DE_CENT DE_C_CEDILLA             &kp DE_PERCENT    &hmr DE_NOT DE_AMPS  &hmr DE_SLASH DE_N7     &hmr DE_LEFT_PARENTHESIS DE_N8  &hmr DE_RIGHT_PARENTHESIS DE_N9  &hmr DE_ACUTE DE_SINGLE_QUOTE  &hmr DE_GRAVE DE_QUESTION
+    &hml DE_POUND_SIGN DE_DOLLAR  &hml LEFT_CONTROL N1  &hml LEFT_ALT DE_LESS_THAN  &hml LEFT_GUI DE_EQUAL              &hml LEFT_SHIFT DE_GREATER_THAN       &kp DE_TILDE      &kp DE_PLUS          &hmr RIGHT_SHIFT DE_N4  &hmr RIGHT_GUI DE_N5            &hmr RIGHT_ALT DE_N6             &hmr RIGHT_CONTROL ENTER       &hmr DE_BROKEN_BAR DE_PIPE
+    &kp DE_CARET                  &trans                &kp DE_AT                   &hml DE_LEFT_BRACKET DE_LEFT_BRACE  &hml DE_RIGHT_BRACKET DE_RIGHT_BRACE  &kp DE_UMLAUT     &kp DE_MINUS         &kp DE_N1               &kp DE_N2                       &kp DE_N3                        &kp DE_DOT                     &kp DE_BACKSLASH
                           &none   &kp SPACE  &kp LEFT_ALT    &none  &none  &none
             >;
         };
@@ -109,13 +93,9 @@
         WNAV {
             display-name = "WNAV";
             bindings = <
-// ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
-// ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
+    &kp F1  &kp F2    &kp F3         &kp F4      &kp F5            &kp F6        &kp F7           &kp F8          &kp F9           &kp F10       &kp F11          &kp F12
+    &trans  &kp HOME  &kp PAGE_UP    &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT    &trans           &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+    &trans  &kp END   &kp PAGE_DOWN  &trans      &trans            &trans        &trans           &trans          &trans           &trans        &trans           &trans
                                 &trans   &trans   &trans      &trans   &trans   &trans
                            // ╰────────┴────────┴────────╯  ╰────────┴────────┴────────╯
             >;
@@ -157,7 +137,7 @@
 // ╭────────┬────────┬────────┬────────┬────────┬────────╮  ╭────────┬────────┬────────┬────────┬────────┬────────╮
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
 // ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
-    &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
+    &bt BT_CLR         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &trans   &trans   &trans   &trans   &trans   &trans
 // ├────────┼────────┼────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┼────────┼────────┼────────┤
     &trans    &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &trans   &trans
 // ╰────────┴────────┴────────┼────────┼────────┼────────┤  ├────────┼────────┼────────┴────────┴────────┴────────╯
