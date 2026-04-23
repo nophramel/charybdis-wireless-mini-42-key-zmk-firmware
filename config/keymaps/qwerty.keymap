@@ -24,7 +24,7 @@
 // ╰──────┴──────┴──────┼──────┼──────┼──────┤  ├──────┼──────┼──────┴──────┴──────┴──────╯
 //                         36     37     38        39     40     41
 //                      ╰──────┴──────┴──────╯  ╰──────┴──────┴──────╯
-// #define MAC       0
+// #define BASE       0
 // #define MACNUM    1
 // #define MACNAV    2
 // #define WIN       3
@@ -36,7 +36,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        default_mac_layer {
+        BASE {
             display-name = "MAC";
             bindings = <
     &kp ESC         &kp Q                &kp W            &kp E            &kp R                    &kp T             &kp DE_Z     &kp U                             &kp I             &kp O             &kp P                           &kp DE_U_UMLAUT
