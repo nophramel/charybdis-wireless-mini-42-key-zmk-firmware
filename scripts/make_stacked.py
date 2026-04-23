@@ -120,7 +120,8 @@ def main() -> None:
         for name, rows in layers_raw.items()
     }
 
-    n_keys: int = len(layers["Base"])
+    base_layer_name = "Base" if "Base" in layers else next(iter(layers))
+    n_keys: int = len(layers[base_layer_name])
 
     stacked = [make_stacked_key(i, layers, raw_binding_map) for i in range(n_keys)]
 
