@@ -307,6 +307,10 @@ jobs:
         mkdir -p "$GITHUB_WORKSPACE/out/$NM"
         cp "$BUILD_DIR/zephyr/$ART" "$GITHUB_WORKSPACE/out/$NM/$FNAME"
 
+        if [[ "$SH" == *dongle* && -f "$BUILD_DIR/zephyr/zephyr.dts" ]]; then
+          cp "$BUILD_DIR/zephyr/zephyr.dts" "$GITHUB_WORKSPACE/out/$NM/${SH}${KM:+-${KM}}.dts"
+        fi
+
     - name: Upload firmware bundle
       uses: actions/upload-artifact@v7
       with:
