@@ -1468,8 +1468,8 @@ text.br  { font-family: "JetBrainsMono Nerd Font"; fill: var(--all-corner); font
 </g>
 </g>
 </g>
-<g transform="translate(30, 2589)" class="layer-SLOW">
-<text x="0" y="28" class="label" id="SLOW">SLOW:</text>
+<g transform="translate(30, 2589)" class="layer-SCROLL">
+<text x="0" y="28" class="label" id="SCROLL">SCROLL:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(38, 66)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key trans"/>
@@ -1641,8 +1641,8 @@ text.br  { font-family: "JetBrainsMono Nerd Font"; fill: var(--all-corner); font
 </g>
 </g>
 </g>
-<g transform="translate(30, 3020)" class="layer-Scroll">
-<text x="0" y="28" class="label" id="Scroll">Scroll:</text>
+<g transform="translate(30, 3020)" class="layer-SNIPER">
+<text x="0" y="28" class="label" id="SNIPER">SNIPER:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(38, 66)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-36" y="-36" width="72" height="72" class="key trans"/>
