@@ -1,7 +1,7 @@
 [![.github/workflows/build.yml](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml)
 
 > [!WARNING]
-> This Readme hasn't been updated and reflects the configs from the upstream repo [badjeff](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware).
+> This Readme hasn't been updated and reflects the configs from the upstream repo from [badjeff](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware).
 
 ## Intro
 
